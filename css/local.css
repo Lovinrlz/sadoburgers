@@ -1,0 +1,155 @@
+.ubi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0;
+  gap: 40px;
+
+  .titleubi {
+    font-family: var(--font-titulos2);
+    font-size: 20px;
+    animation: slideLeft 1s ease forwards;
+  }
+  .maplocal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    width: 100%;
+    height: 100%;
+
+    .map {
+      width: 900px;
+      height: 400px;
+      transition: 0.2s ease-in all;
+      animation: slideLeft 1s ease;
+      &:hover {
+        transform: scale(1.01);
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      }
+    }
+    .cardlocal {
+      width: 700px;
+      height: 300px;
+      background: #f2f2f2;
+      display: grid;
+      grid-template-columns: auto auto;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      animation: slideRight2 1s ease;
+      transition: 0.2s ease-in all;
+      &:hover {
+        transform: scale(1.01);
+      }
+
+      .fotolocal {
+        display: inline-flex;
+        width: 300px;
+        height: 300px;
+        img {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+
+      .info {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        h3 {
+          font-family: var(--font-titulos);
+          font-size: 25px;
+        }
+
+        .descripinfo {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          font-family: var(--font-descripcion);
+          font-size: 14px;
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    & {
+      padding: 50px 0;
+      .maplocal {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        .map {
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 780px) {
+    & {
+      padding: 40px 0;
+      gap: 30px;
+      .maplocal {
+        .cardlocal {
+          width: 100%;
+          height: auto;
+          .fotolocal {
+            width: 100%;
+            height: 100%;
+          }
+          .info {
+            gap: 10px;
+            padding: 20px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    & {
+      padding: 30px 0;
+      gap: 20px;
+      .maplocal {
+        .cardlocal {
+          .info {
+            h3 {
+              font-size: 20px;
+            }
+            .descripinfo {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    & {
+      .maplocal {
+        .cardlocal {
+          display: flex;
+          flex-direction: column;
+          .fotolocal {
+            width: 100%;
+            height: 170px;
+          }
+        }
+      }
+    }
+  }
+}
