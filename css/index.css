@@ -268,7 +268,7 @@ header {
   @media screen and (max-width: 500px) {
     & {
       height: 450px;
-      background-attachment: scroll;
+      /* background-attachment: scroll;*/
 
       .welcome {
         text-align: center;
