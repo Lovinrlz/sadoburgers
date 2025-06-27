@@ -41,7 +41,7 @@ header {
       display: flex;
       gap: 25px;
     }
-   a {
+    a {
       color: #000;
       transition: 0.3s ease all;
       .selected {
@@ -256,23 +256,14 @@ header {
       font-weight: 300;
     }
   }
-  @media screen and (max-width: 900px) {
-    & {
-      height: 450px;
-
-      .welcome {
-        text-align: center;
-        padding: 50px;
-      }
-    }
-  }
-
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 740px) {
     & {
       height: 450px;
       background-attachment: scroll;
+      justify-content: center;
 
       .welcome {
+        padding: 0px;
         text-align: center;
       }
     }
