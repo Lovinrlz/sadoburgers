@@ -45,7 +45,6 @@ header {
       color: #000;
       transition: 0.3s ease all;
       .selected {
-        text-shadow: 2px 2px 2px #000000;
         color: white;
       }
     }
