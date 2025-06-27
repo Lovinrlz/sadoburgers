@@ -18,6 +18,7 @@ header {
     animation: slideLeft 1s ease;
 
     img {
+      width: auto;
       height: 100%;
       float: right;
       transition: transform 0.5s ease-in-out;
@@ -268,7 +269,7 @@ header {
   @media screen and (max-width: 500px) {
     & {
       height: 450px;
-      background-attachment: scroll;
+      /* background-attachment: scroll; */
 
       .welcome {
         text-align: center;
@@ -301,21 +302,14 @@ header {
     gap: 50px;
 
     .card1 {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 40px;
-      overflow: hidden;
-      border-radius: 20px;
-      box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-    }
-
-    .card2 {
       width: 392px;
       height: 300px;
       display: inline-flex;
       transition: 0.3s ease-in all;
       position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 
       a,
       .botonver {
@@ -335,6 +329,7 @@ header {
       }
       img {
         width: 100%;
+        height: 100%;
         object-fit: cover;
         filter: brightness(70%);
         transition: 0.2s ease-in all;
@@ -359,17 +354,15 @@ header {
       padding: 50px 10px 80px 10px;
       .menu1 {
         .card1 {
-          .card2 {
-            width: 200px;
-            height: 250px;
-            img {
-              filter: brightness(90%);
-            }
-            a,
-            .botonver {
-              top: 40%;
-              left: 32%;
-            }
+          width: 200px;
+          height: 250px;
+          img {
+            filter: brightness(90%);
+          }
+          a,
+          .botonver {
+            top: 40%;
+            left: 32%;
           }
         }
       }
@@ -381,14 +374,12 @@ header {
       .menu1 {
         gap: 20px;
         .card1 {
-          .card2 {
-            width: 300px;
-            height: 200px;
-            a,
-            .botonver {
-              top: 40%;
-              left: 38%;
-            }
+          width: 300px;
+          height: 200px;
+          a,
+          .botonver {
+            top: 40%;
+            left: 38%;
           }
         }
       }
@@ -463,6 +454,7 @@ footer {
     height: 70px;
 
     img {
+      width: auto;
       height: 100%;
       transition: transform 0.5s ease-in-out;
       &:hover {
