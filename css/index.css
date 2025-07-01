@@ -155,7 +155,7 @@ header {
         border-radius: 15px;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
         transition: 0.3s ease all;
-        font-family: var(--font-titulos);
+        font-family: var(--font-titulos2);
         .nav-list {
           flex-direction: column;
           align-items: end;
