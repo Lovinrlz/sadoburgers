@@ -7,13 +7,20 @@
   box-sizing: border-box;
 }
 
+/*Fuentes locales*/
+@font-face {
+  font-family: "Springwood";
+  src: url(../fonts/Springwood\ Display\ DEMO.otf);
+}
+
 /*Seccion de variables de colores, fuentes, etc*/
 :root {
   --color-primario: #ffc500;
   --color-boton1: #3d3d3d;
   --color-rappi: #ff4940;
+  --font-titulos2: "Springwood", sans-serif;
   --font-titulos: "Bebas Neue", sans-serif;
-  --font-titulos2: "Chewy", system-ui;
+  /* --font-titulos2: "Chewy", system-ui; */
   --font-titulos3: "Yellowtail", cursive;
   --font-subtitulos: "Gochi Hand", cursive;
   --font-descripcion: "Montserrat", sans-serif;
