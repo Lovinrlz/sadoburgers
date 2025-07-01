@@ -247,7 +247,7 @@ header {
 
     h1 {
       font-family: var(--font-titulos2);
-      font-size: clamp(40px, 5vw, 55px);
+      font-size: clamp(35px, 5vw, 55px);
       font-weight: 300;
     }
     p {
