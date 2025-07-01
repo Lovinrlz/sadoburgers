@@ -23,6 +23,12 @@
   .titulos2 {
     font-size: 38px;
   }
+  @media screen and (max-width: 700px) {
+    & {
+      gap: 15px;
+      padding-top: 20px;
+    }
+  }
 }
 
 .gridburgers {
@@ -93,6 +99,7 @@
     & {
       grid-template-columns: auto;
       justify-content: center;
+      margin: 15px 0;
 
       .cardburger {
         width: 425px;
