@@ -45,6 +45,7 @@ header {
       color: #000;
       transition: 0.3s ease all;
       .selected {
+        text-shadow: 2px 2px 2px #000000;
         color: white;
       }
     }
@@ -246,7 +247,7 @@ header {
 
     h1 {
       font-family: var(--font-titulos2);
-      font-size: clamp(40px, 10vw, 55px);
+      font-size: clamp(40px, 5vw, 55px);
       font-weight: 300;
     }
     p {
