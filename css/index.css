@@ -312,54 +312,53 @@ header {
     gap: 50px;
 
     .card1 {
-      width: 392px;
+      width: 100%;
+      max-width: 392px;
       height: 300px;
       display: inline-flex;
-      transition: 0.3s ease-in all;
-      position: relative;
+      transition: transform 0.3s ease-in all;
       border-radius: 20px;
       overflow: hidden;
       box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-
-      a,
-      .botonver {
-        position: absolute;
-        top: 45%;
-        left: 40%;
-        display: none;
-      }
-
-      p {
-        position: absolute;
-        top: 80%;
-        left: 10%;
-        font-family: var(--font-titulos2);
-        color: #fff;
-        font-size: clamp(25px, 2vw, 30px);
-      }
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(70%);
-        transition: 0.2s ease-in all;
-      }
+      cursor: pointer;
+      transition: 0.2s ease-in all;
       &:hover {
-        img {
-          filter: brightness(100%);
-          transform: scale(1.02);
+        transform: scale(1.05);
+      }
+
+      .img-container {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        background-color: #333;
+        .image-slide {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          opacity: 0;
+          transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+          transform: scale(1.1);
         }
-        a,
-        .botonver {
-          display: inline-flex;
+        .image-slide.active {
+          opacity: 1;
+          transform: scale(1);
         }
         p {
-          display: none;
+          position: absolute;
+          top: 80%;
+          left: 10%;
+          font-family: var(--font-titulos2);
+          color: #fff;
+          font-size: clamp(25px, 2vw, 30px);
+        }
+        img {
+          filter: brightness(70%);
         }
       }
     }
   }
-  @media screen and (max-width: 1000px) {
+  /* @media screen and (max-width: 1000px) {
     & {
       padding: 50px 10px 80px 10px;
       .menu1 {
@@ -377,7 +376,7 @@ header {
         }
       }
     }
-  }
+  } */
 
   @media screen and (max-width: 500px) {
     & {
@@ -386,10 +385,8 @@ header {
         .card1 {
           width: 300px;
           height: 200px;
-          a,
-          .botonver {
-            top: 40%;
-            left: 38%;
+          .img-container {
+            height: 200px;
           }
         }
       }
