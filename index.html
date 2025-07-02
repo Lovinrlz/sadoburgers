@@ -76,67 +76,71 @@
           <h2>100% <span>ARTESANALES</span></h2>
         </div>
         <div class="menu1">
-          <div class="card1">
-            <img src="./img/burgerindex2.jpg" alt="hamburguesa" />
-            <p>HAMBURGUESAS</p>
-            <a href="./menu.html">
-              <div class="botonver">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                  />
-                </svg>
-              </div>
-            </a>
+          <div class="card1" id="card1" data-url="./menu.html">
+            <div class="img-container">
+              <img
+                src="./img/burgerindex2.jpg"
+                alt="hamburguesa"
+                class="image-slide active"
+              />
+              <img
+                src="./img/burger2.jpg"
+                alt="hamburguesa"
+                class="image-slide"
+              />
+              <img
+                src="./img/burger3.jfif"
+                alt="hamburguesa"
+                class="image-slide"
+              />
+              <p>HAMBURGUESAS</p>
+            </div>
+          </div>          
+          <div class="card1" id="card2" data-url="./menu.html#guarniciones">
+            <div class="img-container">
+              <img
+                src="./img/salchichorizo.jpg"
+                alt="salchichorizo"
+                class="image-slide active"
+              />
+              <img
+                src="./img/papastocino.jpg"
+                alt="papas tocino"
+                class="image-slide"
+              />
+              <img
+                src="./img/papasqueso.jpg"
+                alt="papas queso"
+                class="image-slide"
+              />
+              <img
+                src="./img/papasfritas.jpg"
+                alt="papas fritas"
+                class="image-slide"
+              />
+              <p>GUARNICIONES</p>
+            </div>
           </div>
-          <div class="card1">
-            <img src="./img/salchichorizo.jpg" alt="papas-fritas" />
-            <p>GUARNICIONES</p>
-            <a href="./menu.html#guarniciones">
-              <div class="botonver">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                  />
-                </svg>
-              </div>
-            </a>
+          <div class="card1" id="card3" data-url="./menu.html#bebidas">
+            <div class="img-container">
+              <img
+                src="./img/bebidaindex.jpg"
+                alt="bebida"
+                class="image-slide active"
+              />
+              <img
+                src="./img/bebida4.jpg"
+                alt="bebida"
+                class="image-slide"
+              />
+              <img
+                src="./img/bebida3.jfif"
+                alt="bebida"
+                class="image-slide"
+              />
+              <p>BEBIDAS</p>
+            </div>
           </div>
-          <div class="card1 drinks">
-            <img src="./img/bebidaindex.jpg" alt="bebida" />
-            <p>BEBIDAS</p>
-            <a href="./menu.html#bebidas">
-              <div class="botonver">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-search"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
-                  />
-                </svg>
-              </div>
-            </a>
-          </div>
-        </div>
       </section>
       <section class="rappimask">
         <div class="rappi">
@@ -223,4 +227,5 @@
     </footer>
   </body>
   <script src="./js/menuburger.js"></script>
+  <script src="./js/slidercard.js"></script>
 </html>
