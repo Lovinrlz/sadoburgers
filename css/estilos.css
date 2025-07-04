@@ -1,0 +1,191 @@
+/*Reiniciamos configuraciones por defectos del navegador en todas nuestras hojas*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Fuentes locales*/
+@font-face {
+  font-family: "Springwood";
+  src: url(../fonts/Springwood\ Display\ DEMO.otf);
+}
+
+/*Seccion de variables de colores, fuentes, etc*/
+:root {
+  --color-primario: #ffc500;
+  --color-boton1: #3d3d3d;
+  --color-rappi: #ff4940;
+  --font-titulos2: "Springwood", sans-serif;
+  --font-titulos: "Bebas Neue", sans-serif;
+  --font-titulos4: "Chewy", system-ui;
+  --font-titulos3: "Yellowtail", cursive;
+  --font-subtitulos: "Gochi Hand", cursive;
+  --font-descripcion: "Montserrat", sans-serif;
+}
+
+/*Aplicamos efecto smooth al dar click a secciones y color negro de fondo para la seccion pidelorappi*/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url(../img/fondo.webp);
+}
+
+/*Quitamos subrayado de los enlaces en general*/
+a {
+  text-decoration: none;
+}
+
+/* Estilo para diferentes botones */
+.boton1 {
+  width: 170px;
+  height: 45px;
+  background: #000;
+  font-family: var(--font-titulos2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(15px, 2vw, 18px);
+  border-radius: 12px;
+  transition: 0.2s ease all;
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2),
+    2px 2px 0px 0px rgba(0, 0, 0, 0.2), 3px 3px 0px 0px rgba(0, 0, 0, 0.2),
+    4px 4px 0px 0px rgba(0, 0, 0, 0.2), 5px 5px 0px 0px rgba(0, 0, 0, 0.2);
+  transform: translate(-5px, -5px);
+  &:hover {
+    box-shadow: none;
+    transform: translate(0px, 0px);
+  }
+  a {
+    color: white;
+  }
+}
+
+.boton2 {
+  width: 200px;
+  height: 50px;
+  font-family: var(--font-titulos);
+  background: var(--color-primario);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  p {
+    color: #000;
+  }
+}
+
+.botonrappi {
+  width: 140px;
+  height: 45px;
+  font-family: var(--font-titulos);
+  background: var(--color-rappi);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border-radius: 12px;
+  transition: 0.2s ease all;
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2),
+    2px 2px 0px 0px rgba(0, 0, 0, 0.2), 3px 3px 0px 0px rgba(0, 0, 0, 0.2),
+    4px 4px 0px 0px rgba(0, 0, 0, 0.2), 5px 5px 0px 0px rgba(0, 0, 0, 0.2);
+  transform: translate(-5px, -5px);
+  &:hover {
+    box-shadow: none;
+    transform: translate(0px, 0px);
+  }
+
+  img {
+    width: 40%;
+    height: auto;
+  }
+}
+
+.botonrappi2 {
+  width: 150px;
+  height: 50px;
+  font-family: var(--font-titulos);
+  background: var(--color-rappi);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  border-radius: 15px;
+  transition: 0.3s ease all;
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  img {
+    width: 40%;
+    height: auto;
+  }
+}
+
+.botonver {
+  width: 75px;
+  height: 50px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 20px;
+  font-family: var(--font-titulos);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+/* Fin de estilo para diferentes botones */
+
+/* Inicio de animaciones*/
+@keyframes slideRight {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight2 {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft2 {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+/* Fin Animaciones */
